@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Blogs using fetch</title>
+</head>
+<body>
+    <h3 class="text-center bg-dark py-2 text-white">Blogs Using Fetch</h3>
+
+    <div id="spinner" class="text-center d-none mt-3">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <form id="form">
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" id="title" required placeholder="Enter title..." class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="content">Content</label>
+                              <textarea name=" " id="content" placeholder="Enter content..." class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="userId">UserId</label>
+                                <input type="number" id="userId" placeholder="Enter userId..." class="form-control">
+                            </div>
+                            <button type="submit" id="addBlogs" class="btn btn-sm btn-block btn-primary">Add Blogs</button>
+                            <button type="button" id="updateBlogs" class="btn btn-sm btn-block btn-success d-none">Update Blogs</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="container">
+            <!-- <div class="col-md-4">
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta voluptatem esse nisi molestias dolorem iste nihil quasi, nulla, ab aliquid illum quod sequi officiis maiores dolores, repellat totam velit magni</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button type="button" class="btn btn-sm btn-outline-primary">Edit</button>
+                        <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
